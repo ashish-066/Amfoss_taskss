@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Dynamic Website Blocker",
+  "version": "1.0",
+  "description": "Block websites dynamically based on user input",
+  "permissions": [
+    "tabs",
+    "storage",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
